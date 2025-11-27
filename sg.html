@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>终焉</title>
+    <style>
+        html {
+                height: 100%;                      
+                background: url("images/goodbye.jpg") no-repeat center/cover fixed;
+            }        
+    body {
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight: 100;         
+        font-size: 32px;
+        background: var(--cold);
+        line-height: 1.8;         
+        }
+    @keyframes floatIn {
+            0%   { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+    }
+    .float-line {
+      display: block;          /* 让每行单独占块，才能依次触发 */
+      animation: floatIn 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+    }
+    float-line:nth-child(1)  { animation-delay: 0.6s; }
+    .float-line:nth-child(2)  { animation-delay: 1.1s; }
+    .float-line:nth-child(3)  { animation-delay: 1.6s; }
+    .float-line:nth-child(4)  { animation-delay: 2.1s; }
+    .float-line:nth-child(5)  { animation-delay: 2.6s; }
+    .float-line:nth-child(6)  { animation-delay: 3.1s; }
+    .float-line:nth-child(7)  { animation-delay: 3.6s; }
+    .float-line:nth-child(8)  { animation-delay: 4.1s; }
+    .float-line:nth-child(9)  { animation-delay: 4.6s; }
+    h2.float-text {
+      margin-top: 60px;
+      font-weight: 100;
+      font-size: 28px;
+      animation: floatIn 1.2s 2s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+    }
+    a {
+      color: #ffd52b;
+      text-decoration: none;
+      animation: floatIn 0.8s 3.2s forwards;
+    }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;
+300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="float-line ">一些文字罢了，如有冒犯，还请别在意</h1>
+    <p class="float-line">
+        
+    <pre class="float-line">  生活给了我很多选择</pre>
+    <pre class="float-line">  我一次都没选对</pre>
+    <pre class="float-line">  嘴上说顺其自然</pre>
+    <pre class="float-line">  其实我是无能为力<br></pre>
+       
+    <pre class="float-line">  再也不见，</pre>
+    <pre class="float-line">  我念念不忘的人<br></pre>
+         
+    <pre class="float-line">  风太大 把心吹凉了，</pre>
+    <pre class="float-line">  再也回不到以前的样子了</pre>
+       
+    </p>
+    <h2 class="float-line">
+        不过人还是要向前看的，因为即使再后悔，也回不去了……
+    </h2>
+    <h3><a href="index.html">希望</a>再见……</h3>
+</body>
+</html>
